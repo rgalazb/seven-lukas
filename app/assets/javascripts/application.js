@@ -12,4 +12,9 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require imagesloaded.pkgd.min
+//= require masonry.pkgd.min
+//= require color-thief.min
+//= require galleryExpand
+//= require init
 //= require_tree .
