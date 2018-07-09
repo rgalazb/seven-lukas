@@ -1,0 +1,69 @@
+<nav class="nav-extended nav-full-header teal lighten-2" id="other_nav">
+  <div class="nav-wrapper container">
+    <a href="<%= root_path %>" class="brand-logo" ><%= image_tag 'confort millonario.png', id: 'loguito' %> <span id="marca">Seven Lukas</span></a>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="<%= pages_what_path %>">¿Qué es esto?</a></li>
+      <li><a href="<%= pages_colusion_path %>">Colusión</a></li>
+      <li><a href="<%= pages_contact_path %>">Contacto</a></li>
+    </ul>
+  </div>
+  </nav>
+  <div class="row"></div>
+  <div class="row"></div>
+  <div class="row"></div>
+<div class="container">
+  <div class="row">
+
+      <form class="col s12" action="https://formspree.io/lucas.otarola@gmail.com"
+      method="POST">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" name="nombre_tienda">
+            <label for="last_name">Nombre de la tienda</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" name="email">
+            <label for="last_name">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <select>
+              <option value="" disabled selected>Elige la categoría de tu tienda</option>
+              <option value="Tecnología">Tecnología</option>
+              <option value="Belleza">Belleza</option>
+              <option value="Ropa">Ropa</option>
+              <option value="Mascotas">Mascotas</option>
+              <option value="Cuentas">Cuentas Premium</option>
+              <option value="JuegosVideo">Video Juegos</option>
+              <option value="Cupones">Cuponeras</option>
+              <option value="Celulares">Celulares</option>
+              <option value="Otros">Otros</option>
+            </select>
+            <label>Categoria</label>
+          </div>
+          <div class="col s6">
+            <i class="material-icons">info_outline</i><br>
+            Si tu categoría no está, incluyelo en el mensaje.
+          </div>
+        </div>
+
+        <div class="row">
+          <br>
+          <div class="input-field col s6">
+            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+            <label for="icon_prefix2">Mensaje</label>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <input type="submit" class="btn btn-primary">
+          </div>
+        </div>
+        </div>
+      </form>
+    </div>
+</div>

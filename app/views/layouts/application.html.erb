@@ -6,13 +6,28 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= yield %>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script src="<%= asset_path 'imagesloaded.pkgd.min.js' %>" charset="utf-8"></script>
+    <script src="<%= asset_path 'masonry.pkgd.min.js' %>" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="<%= asset_path 'color-thief.min.js' %>" charset="utf-8"></script>
+    <script src="<%= asset_path 'galleryExpand.js' %>" charset="utf-8"></script>
+    <script src="<%= asset_path 'init.js' %>" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('select').formSelect();
+        $('.tooltipped').tooltip();
+      });
+    </script>
   </body>
 </html>
